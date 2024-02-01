@@ -1,0 +1,6 @@
+n1=float(input("enter the first number: "))
+n2=float(input("enter the second number: 20"))
+print("sum is ",n1+n2)
+print("subtraction is ",n1-n2)
+print("product is ",n1*n2)
+print("quotient  is ",n1/n2)
