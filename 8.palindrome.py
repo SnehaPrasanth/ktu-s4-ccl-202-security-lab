@@ -1,16 +1,11 @@
-n = int(input("Enter a number: "))
-
-if n > 1:
-    prime_flag = True
-    for i in range(2, int(n/2) + 1):
-        if (n % i) == 0:
-            prime_flag = False
-            break
-    if prime_flag:
-        print("Prime")
-    else:
-        print("Not prime")
-elif n == 1 or n == 0:
-    print("Neither prime nor composite")
+n=int(input("enter a number: "))
+temp=n
+rev=0
+while temp>0:
+    dig=temp%10
+    rev=rev*10+dig
+    temp=temp//10
+if n==rev:
+    print("palindrome")
 else:
-    print("Enter a number greater than 1")
+    print("not palindrome")
